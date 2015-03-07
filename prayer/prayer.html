@@ -1,0 +1,20 @@
+<template name="prayers">
+	<div id="prayers">
+		<ul>
+			{{#each prayer}}
+				<li>
+					<a href="/prayer/{{_id}}">{{_id}}</a>
+				</li>
+			{{/each}}
+				<li>
+					<button id="addPrayerRequest">Add</button>
+				</li>
+		</ul>
+	</div>
+</template>
+
+<template name="prayer">
+	<div id="prayer">
+		{{name}}
+	</div>
+</template>
